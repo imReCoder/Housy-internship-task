@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { validateAddCustomer } from '../../validators/customer.validator.js';
-import { addCustomer, deleteCustomer, getCusstomer, sendNotification, updateCustomer } from './customer.model.js';
+import { addCustomer, deleteCustomer, getCustomer, sendNotification, updateCustomer } from './customer.model.js';
 
 const router = Router();
 
@@ -11,6 +11,6 @@ router.post('/update', updateCustomer);
 router.delete('/delete', deleteCustomer);
 
 router.post('/send-notification', sendNotification);
-router.get('/fetch', getCusstomer);
+router.get('/:customerId/fetch', getCustomer);
 
 export default router

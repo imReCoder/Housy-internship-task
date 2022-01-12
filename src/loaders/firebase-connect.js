@@ -7,5 +7,10 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
 
+
+// export const getMessaging = () => {
+//   return admin.messaging();
+// }
+
 const db = admin.firestore();
 export default db;
