@@ -26,6 +26,7 @@ export default {
     }
   ],
   apis: [
+    "src/api/components/customer/*.js",
     "src/models/*.js",
     "src/utils/helpers/*.js",
     "src/api/controllers/user/*.js",

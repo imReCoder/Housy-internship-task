@@ -10,7 +10,7 @@ import bodyParser from 'body-parser';
 
 export default (app) => {
   process.on('uncaughtException', async (error) => {
-    // console.log(error);
+    console.log(error);
     logger('00001', '', error.message, 'Uncaught Exception', '');
   });
 
